@@ -1,0 +1,55 @@
+@import 'override';
+@import 'utility';
+@import 'utility_colors';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smooting: antialiased;
+  -moz-osx-font-smooting: grayscale;
+
+  background-color: #fcfcfc;
+}
+
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+}
+
+.custom-scroll {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: darken(#ddd, 20%);
+  }
+}
+
+.img-fullsize {
+  * {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+.chat-top,
+.chat-middle,
+.chat-bottom {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-top,
+.chat-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
